@@ -8,7 +8,7 @@ if ($_SESSION['level'] !== 'admin') {
 include '../config/database.php';
 $db = new database();
 $spp = $db->referensi_spp();
-$kelas = $db->refernsi_kelas();
+$kelas = $db->referensi_kelas();
 $ambils = $db->ambil_data($_GET['tabel'],$_GET['field'],$_GET['id']);
 if (isset($_POST['edit'])) {
     $nisn = $_POST['nisn'];
